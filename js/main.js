@@ -1,6 +1,6 @@
 let fortunes = [
   {
-    fortune: "It is certain.",
+    fortune: "It is certain",
     images: [
       "images/magic8ball_1.png",
       "images/magic8ball_4.png",
@@ -8,7 +8,7 @@ let fortunes = [
     ],
   },
   {
-    fortune: "It is decidedly so.",
+    fortune: "It is decidedly so",
     images: [
       "images/magic8ball_2.png",
       "images/magic8ball_6.png",
@@ -16,7 +16,7 @@ let fortunes = [
     ],
   },
   {
-    fortune: "Without a doubt.",
+    fortune: "Without a doubt",
     images: [
       "images/magic8ball_3.png",
       "images/magic8ball_8.png",
@@ -24,7 +24,7 @@ let fortunes = [
     ],
   },
   {
-    fortune: "Cannot predict now.",
+    fortune: "Cannot predict now",
     images: [
       "images/magic8ball_start.png",
     ],
@@ -42,7 +42,9 @@ const showFortune = () => {
   const fortuneDiv = document.getElementById("fortune");
   const imageElement = document.createElement("img");
   imageElement.src = imagePath;
+  imageElement.style.width = "400px";
+  imageElement.style.height = "400px";
   fortuneDiv.innerHTML = `<h2>Your Fortune:</h2><p>${fortune}</p>`;
   fortuneDiv.appendChild(imageElement);
 };
-
+showFortune()
